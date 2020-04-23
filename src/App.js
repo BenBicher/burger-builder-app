@@ -11,11 +11,11 @@ import Logout from './containers/Auth/Logout/Logout';
 const asyncCheckout = asyncComponent(() => {
   return import('./containers/Checkout/Checkout');
 });
-const asyncOrders = asyncComponent(() => {
+const asyncAuth = asyncComponent(() => {
   return import('./containers/Auth/Auth');
 });
-const asyncAuth = asyncComponent(() => {
-  return import('./containers/Checkout/Checkout')
+      const asyncOrders = asyncComponent(() => {
+  return import('./containers/Checkout/Orders/Orders');
 });
 
 class App extends Component {
